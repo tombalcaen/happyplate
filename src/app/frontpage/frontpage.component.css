@@ -1,0 +1,260 @@
+.background-cover{
+    background-size: cover;
+    background-position: center center;    
+}
+
+@media only screen
+and (max-width: 812px)
+and (orientation: portrait){
+    .background-cover{
+        background-position: center right;
+    }
+}
+
+.background-1{
+    background-image: url("../../assets/pexels-photo-1640773.jpeg");
+}
+
+.background-2{
+    background-image: url("../../assets/pexels-photo-1640777.jpeg");
+}
+
+.background-fill{
+    position: relative;
+    /* height: 100%; */
+    min-height: 80vh;
+    width: 100%;
+    /* top: 83px; */
+    left: 0;
+    z-index: -1;
+}
+
+@media only screen
+and (max-width: 812px)
+and (orientation: portrait){
+    .background-fill{
+        top: 60px;
+    }
+
+}
+
+
+.wrapper{
+    /* min-height: 80vh; */
+}
+
+.vertical-center{
+    position: relative;
+    /* margin-top: 28vh; */
+    /* transform: translateY(66%);     */
+}
+
+.header-info{
+    padding: 0; 
+    min-height: 211px; 
+    margin-top: 34vh;
+}
+
+.header-info-bg{
+    position: absolute; 
+    height: 100%; 
+    width: inherit; 
+    opacity: 0.2; 
+    background-color: black;
+}
+
+@media only screen
+and (max-width: 812px)
+and (orientation: portrait){
+    .header-info{
+        min-height: 183px;
+        margin-top: 22vh;
+    }
+
+    .header-info-bg{
+        position: absolute; 
+        height: 100%; 
+        width: inherit; 
+        opacity: 0.6; 
+        background-color: black;
+    }
+}
+
+.cta{
+    position: relative;
+    height: 42px;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px 0 rgba(50,50,93,.11), 1px 1px 3px 0 rgba(0,0,0,.08);
+    transition: .2s;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    color: #222;
+    /* vertical-align: top; */
+    text-decoration: none;
+    padding: 13px 24px 13px 25px;
+}
+
+.getstarted-cta{
+    background-color: orangered;
+    color: #fff !important;
+    top: 35px;
+}
+
+.ready-cta{
+    background-color: #06d79c;
+    color: #fff !important;
+}
+
+h1, h3, h4{
+    color: snow;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+@media only screen
+and (max-width: 812px)
+and (orientation: portrait){
+    .background-cover{
+        background-position: center right;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        color: snow;
+    }
+
+    h3{
+        font-size: 1.1rem;
+        color: snow;
+    }
+
+}
+
+.customers-body{
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #2f363b;
+}
+
+.title-sub{
+    margin-bottom: 37px;
+    letter-spacing: .7px;
+    color: #2f363b;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.33;
+}
+
+.catter-section, .plan-section, .health-section, .pauze-section, .sub-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) { 
+    .catter-section, .plan-section, .health-section, .pauze-section, .sub-section{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+  }
+
+/* @media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) { 
+    .catter-container{     
+        padding: 80px 0px;
+    }
+  } */
+
+.catter-step{
+    padding: 30px 0px;
+}
+
+.catter-step-title h4{ 
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 300;   
+    color: #232323; 
+}
+
+.catter-step-title{
+    position: relative;
+}
+
+.catter-step-title h4::after{
+    bottom: -10px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    background-color: orangered;
+}
+
+@media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) { 
+    .catter-step-body{
+        padding: 20px 15px;
+    }
+}
+
+
+.catter-step-body p{
+    text-align: left;
+    font-size: 1.5rem;
+    /* max-width: 90%; */
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
+}
+
+.plan-body-header{
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 2rem;
+    color: #232323; 
+}
+
+.plan-body-info{
+    text-align: left;
+    font-size: 1.5rem;
+    /* max-width: 90%; */
+    word-wrap: break-word;    
+    color: #777;
+    letter-spacing: 1;
+    margin-bottom: 30px;
+}
+
+.plan-image{
+    background-image: url("../../assets/adding-adult-apron-1537166.jpg")
+}
+
+.pauze-row{
+    background-image: url("../../assets/pexels-photo-1670561.jpeg");
+}
+
+.sub-body-header{
+    font-weight: 400;
+    font-size: 2rem;
+    color: snow; 
+}
