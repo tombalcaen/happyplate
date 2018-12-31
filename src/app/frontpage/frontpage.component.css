@@ -26,7 +26,7 @@ and (orientation: portrait){
     width: 100%;
     /* top: 83px; */
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 @media only screen
@@ -82,6 +82,7 @@ and (orientation: portrait){
 
 .cta{
     position: relative;
+    cursor: pointer;
     height: 42px;
     border-radius: 3px;
     box-shadow: 0 4px 6px 0 rgba(50,50,93,.11), 1px 1px 3px 0 rgba(0,0,0,.08);
