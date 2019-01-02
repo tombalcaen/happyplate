@@ -18,8 +18,11 @@
 <body>
   <app-root></app-root>
   <script>
-    fbq('track', 'ViewContent');
-  </script>  
+    fbq('track', 'ViewContent', {
+      value: start,
+    });
+  </script>
+   
 </body>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
