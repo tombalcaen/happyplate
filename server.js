@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var mailchimpInstance   = 'us16',
     listUniqueId        = 'c5cf54f301';
-    
+
 var allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
@@ -29,7 +29,7 @@ app.get('/*', function(req,res) {
 });
 
 // Start the app by listening on the default Heroku port
-var server = app.listen(process.port||3000,()=>{ //8080
+var server = app.listen(process.env.port||3000,()=>{ //8080
   console.log("App now running on port", server.address().port);
   console.log(__dirname)
 });
