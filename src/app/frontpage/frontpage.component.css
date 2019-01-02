@@ -59,7 +59,7 @@ and (orientation: portrait){
     position: absolute; 
     height: 100%; 
     width: inherit; 
-    opacity: 0.2; 
+    opacity: 0.1; 
     background-color: black;
 }
 
@@ -244,6 +244,51 @@ and (orientation: portrait){
     color: #777;
     letter-spacing: 1;
     margin-bottom: 30px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.value-item-icon{
+    color: #a8b33d;
+}
+
+.value-item{    
+    text-align: left;
+    font-size: 1.5rem;    
+    word-wrap: break-word;
+    line-height: 1.8;
+    color: #777;
+    letter-spacing: -.022em;
+    padding: 10px;
+}
+
+.value-item-text{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+@media only screen 
+  and (max-width: 812px)   
+  and (orientation: portrait) { 
+    .value-item{      
+        text-align: center;          
+        font-size: 1.2rem;     
+        margin-left: 10px;
+    }
+
+    .value-item-text{
+        display: block;
+        margin-left: 0px;
+    }
 }
 
 .plan-image{
