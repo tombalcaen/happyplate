@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var mailchimpInstance   = 'us16',
     listUniqueId        = 'c5cf54f301',
-    mailchimpApiKey     = '872f8e2cb7bc0e80263d215290bafe44-us16';
+
 
 var allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
