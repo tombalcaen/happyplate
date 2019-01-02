@@ -14,10 +14,13 @@
           Dan kunnen we je contacteren als er een plekje vrij komt.
         </p>
         <p>Alvast onze excuses voor dit ongemak.</p>
-        <form class="">
+        <form [formGroup]="subForm" (ngSubmit)="onSubmit(subForm.value)" class="">
           <div class="form-inline">
-            <div class="form-group mr-2" style="min-width: 400px;">              
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email adres" style="width: 100%;">               
+            <div class="form-group mr-2" style="min-width: 300px;">
+              <input formControlName="name" type="text" class="form-control" placeholder="voornaam en naam" style="width: 100%;">
+            </div>            
+            <div class="form-group mr-2" style="min-width: 300px;">
+              <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email adres" style="width: 100%;">               
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-success">Contacteer me</button>
